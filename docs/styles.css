@@ -91,12 +91,12 @@ main {
   width: 88px;
   height: 88px;
   border-radius: 20px;
-  background: var(--primary);
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 0 auto 24px;
   font-size: 44px;
+  overflow: hidden;
 }
 
 .hero h1 {
