@@ -5,12 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Who's the Impostor? — App Info</title>
   <meta name="description" content="Who's the Impostor? is a fully offline local-multiplayer party game for iOS.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL@24,400,0&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <link rel="icon" href="icon.png" type="image/png">
 </head>
 <body>
 
-<nav>
+<nav class="main-nav">
   <div class="nav-inner">
     <a href="index.html" class="nav-brand">Who's the Impostor?</a>
     <ul>
@@ -21,22 +25,46 @@
   </div>
 </nav>
 
-<main>
+<main class="index-main">
   <div class="hero">
-    <div class="app-icon"><img src="icon.png" alt="Who's the Impostor? app icon" style="width:88px;height:88px;border-radius:20px;display:block;"></div>
-    <h1>Who's the Impostor?</h1>
+    <div class="app-icon">
+      <img src="icon.png" alt="Who's the Impostor? app icon" style="width:88px;height:88px;border-radius:20px;display:block;">
+    </div>
+    <h1 class="editorial-headline index-headline">Who's the <span class="text-primary">Impostor?</span></h1>
     <p class="subtitle">A local-multiplayer party game for iOS</p>
+  </div>
+
+  <div class="features">
+    <div class="feature-card">
+      <span class="material-symbols-outlined">wifi_off</span>
+      <h3>Fully Offline</h3>
+      <p>No internet required. Play anywhere, anytime — no servers, no sign-in, no fuss.</p>
+    </div>
+    <div class="feature-card">
+      <span class="material-symbols-outlined">person_off</span>
+      <h3>No Account Needed</h3>
+      <p>Just download and play. Zero personal data collected — ever.</p>
+    </div>
+    <div class="feature-card">
+      <span class="material-symbols-outlined">groups</span>
+      <h3>For All Ages</h3>
+      <p>Rated 4+. Perfect for family game nights or get-togethers with friends.</p>
+    </div>
   </div>
 
   <div class="cards">
     <a href="privacy.html" class="card">
-      <div class="card-icon">🔒</div>
+      <div class="card-icon">
+        <span class="material-symbols-outlined">lock</span>
+      </div>
       <h2>Privacy Policy</h2>
       <p>No data collected, no tracking, fully offline. Read our complete privacy policy.</p>
     </a>
 
     <a href="terms.html" class="card">
-      <div class="card-icon">📋</div>
+      <div class="card-icon">
+        <span class="material-symbols-outlined">description</span>
+      </div>
       <h2>Terms &amp; Conditions</h2>
       <p>Usage terms, intellectual property, and limitations of liability.</p>
     </a>
@@ -44,7 +72,10 @@
 </main>
 
 <footer>
-  <p>&copy; 2026 Gonzalo Bandeira &nbsp;·&nbsp; <a href="privacy.html">Privacy Policy</a> &nbsp;·&nbsp; <a href="terms.html">Terms &amp; Conditions</a></p>
+  <div class="footer-inner">
+    <span class="footer-brand">Who's the Impostor?</span>
+    <p>&copy; 2026 Gonzalo Bandeira &nbsp;·&nbsp; <a href="privacy.html">Privacy Policy</a> &nbsp;·&nbsp; <a href="terms.html">Terms &amp; Conditions</a></p>
+  </div>
 </footer>
 
 </body>
